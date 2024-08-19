@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+
+cd -P -- "$(dirname -- "$0")"
+exec ./adbc_docker_sample_project eval AdbcDockerSampleProject.Release.migrate
